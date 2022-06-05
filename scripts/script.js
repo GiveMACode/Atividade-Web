@@ -112,3 +112,49 @@ function at6(){
 
 }
 
+function at7(){
+
+    var num1 = parseFloat(document.getElementById("n1").value);
+    var diaDaSemana;
+    
+    switch(num1){
+        case 1:
+            diaDaSemana = "Domingo";
+        break
+        case 2:
+            diaDaSemana = "Segunda-Feira";
+        break
+        case 3:
+            diaDaSemana = "Terca-Feira"; 
+            break
+        case 4:
+            diaDaSemana = "Quarta-Feira"; 
+            break
+        case 5:
+            diaDaSemana = "Quinta-Feira"; 
+            break
+        case 6:
+            diaDaSemana = "Sexta-Feira"; 
+            break
+        case 7:
+            diaDaSemana = "Sabado"; 
+    }
+    document.getElementById("r1").innerHTML = diaDaSemana;
+    
+
+}
+
+function at8(){    
+    
+
+    var soma = 0;
+  for (var i = 0; i <= x; i+=2) {
+    if (i % 2 == 0) {
+      soma += i;
+    }
+  }
+  return soma;
+
+}
+
+console.log(at8(20))
