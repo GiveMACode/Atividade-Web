@@ -146,15 +146,15 @@ function at7(){
 
 function at8(){    
     
-
     var soma = 0;
-  for (var i = 0; i <= x; i+=2) {
+  for (var i = 0; i <= 20; i+=2) {
     if (i % 2 == 0) {
       soma += i;
+      document.getElementById("r1").innerHTML = soma;  
     }
   }
-  return soma;
-
+  return soma; 
+    
 }
 
-console.log(at8(20))
+
