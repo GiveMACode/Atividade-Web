@@ -59,7 +59,6 @@ function at3() {
 function at4() {
 
     var num1 = parseFloat(document.getElementById("n1").value);
-    var total;
 
     if (num1 >= 0) {
         var aux = num1 % 2 === 0 ? 'par' : 'impar'
@@ -72,3 +71,44 @@ function at4() {
 
     
 }
+
+function at5(){
+
+    var num1 = parseFloat(document.getElementById("n1").value);
+    
+    if (num1%2 == 0){
+        document.getElementById("r1").innerHTML = "É divisivel por 2";
+    }
+    else{
+        document.getElementById("r1").innerHTML = "Nao é divisivel por 2"
+    }
+    if(num1%3 == 0){
+        document.getElementById("r2").innerHTML = "É divisivel por 3"
+    }
+    else{
+        document.getElementById("r2").innerHTML = "Nao é divisivel por 3"
+    }
+
+
+}
+
+function at6(){
+
+    var num1 = parseFloat(document.getElementById("n1").value);
+    
+    if (num1%2 == 0){
+        document.getElementById("r1").innerHTML = "É divisivel por 2";
+    }
+    else{
+        document.getElementById("r1").innerHTML = "Nao é divisivel por 2"
+    }
+    if(num1%7 == 0){
+        document.getElementById("r2").innerHTML = "É divisivel por 7"
+    }
+    else{
+        document.getElementById("r2").innerHTML = "Nao é divisivel por 7"
+    }
+
+
+}
+
