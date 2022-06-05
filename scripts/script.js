@@ -176,16 +176,12 @@ function at9(){
 function at10(){
 
     var num1 = parseFloat(document.getElementById("n1").value);
-    var aux = '';
+    var aux = num1;
 
-    for (i = 0; i  11; i++){
-        if(num1 > 0){
-            aux += num1 + "x" + i + " = " + num1 * i + "<br/>"
-            document.getElementById("r1").innerHTML = aux;
-        }        
-        else
-        document.getElementById("r1").innerHTML = "Insira um número válido"
+    for (i = 1; i < num1 ; i++){
+        
+        aux *= i;
+
+        document.getElementById("r1").innerHTML = aux;
     }
-}
-
 }
